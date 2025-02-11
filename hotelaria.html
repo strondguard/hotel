@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APTOS E ALOJAMENTOS</title>
+    <style>
+        body{
+            background-image: linear-gradient(45deg,black,crimson);
+            height: 100vh;
+        }
+        .button {
+            padding: 10px;
+            margin: 5px;
+            width: 50px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(99, 98, 96); /* Cor inicial dos botões */
+        }
+        
+        .info-box {
+            display: none;
+            margin-top: 10px;
+            margin-left: 61%;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            
+        }
+        .input-container {
+            display: none;
+            margin-top: 10px;
+        }
+        .titulo{
+            text-align: center;
+            font-style: italic;
+        }
+        .PARA1{
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .alojamentos{
+            text-align: center;
+        }
+        .quartos{
+            text-align: center;
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-box{
+            position: absolute;
+            top: 0px;
+            width:fit-content
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+    <div class="cabecalho">
+    <h1 class="titulo">Apartamentos Ocupados</h1>
+    <p class="PARA1">INFERIORES</p>
+</div>
+    <div class="info-box" id="infoBox"></div>
+</div>
+    <div class="quartos">
+    <button class="button" data-info="" onclick="addInfo(this)">101</button>
+    <button class="button" data-info="" onclick="addInfo(this)">102</button>
+    <button class="button" data-info="" onclick="addInfo(this)">103</button>
+    <button class="button" data-info="" onclick="addInfo(this)">104</button>
+    <button class="button" data-info="" onclick="addInfo(this)">105</button>
+    <button class="button" data-info="" onclick="addInfo(this)">106</button>
+    <button class="button" data-info="" onclick="addInfo(this)">107</button>
+    <button class="button" data-info="" onclick="addInfo(this)">108</button>
+    <button class="button" data-info="" onclick="addInfo(this)">109</button>
+    <button class="button" data-info="" onclick="addInfo(this)">110</button>
+    <button class="button" data-info="" onclick="addInfo(this)">111</button>
+    <button class="button" data-info="" onclick="addInfo(this)">112</button>
+    <button class="button" data-info="" onclick="addInfo(this)">114</button>
+    <button class="button" data-info="" onclick="addInfo(this)">115</button>
+    <button class="button" data-info="" onclick="addInfo(this)">116</button>
+    <button class="button" data-info="" onclick="addInfo(this)">122</button>
+    <button class="button" data-info="" onclick="addInfo(this)">123</button>
+    <button class="button" data-info="" onclick="addInfo(this)">124</button>
+    <button class="button" data-info="" onclick="addInfo(this)">125</button>
+    <button class="button" data-info="" onclick="addInfo(this)">126</button>
+    <button class="button" data-info="" onclick="addInfo(this)">127</button>
+    <button class="button" data-info="" onclick="addInfo(this)">128</button>
+    <button class="button" data-info="" onclick="addInfo(this)">129</button>
+    <button class="button" data-info="" onclick="addInfo(this)">130</button>
+    <button class="button" data-info="" onclick="addInfo(this)">140</button>
+    <button class="button" data-info="" onclick="addInfo(this)">141</button>
+    <button class="button" data-info="" onclick="addInfo(this)">142</button>
+    <button class="button" data-info="" onclick="addInfo(this)">143</button>
+    <button class="button" data-info="" onclick="addInfo(this)">144</button>
+    <button class="button" data-info="" onclick="addInfo(this)">145</button>
+    <button class="button" data-info="" onclick="addInfo(this)">146</button>
+    <button class="button" data-info="" onclick="addInfo(this)">147</button>
+    <button class="button" data-info="" onclick="addInfo(this)">148</button>
+    <button class="button" data-info="" onclick="addInfo(this)">149</button>
+    <button class="button" data-info="" onclick="addInfo(this)">150</button>
+    <button class="button" data-info="" onclick="addInfo(this)">151</button>
+    <button class="button" data-info="" onclick="addInfo(this)">152</button>
+    <button class="button" data-info="" onclick="addInfo(this)">161</button>
+    <button class="button" data-info="" onclick="addInfo(this)">162</button>
+    <button class="button" data-info="" onclick="addInfo(this)">163</button>
+    <button class="button" data-info="" onclick="addInfo(this)">164</button>
+    <button class="button" data-info="" onclick="addInfo(this)">165</button>
+    <button class="button" data-info="" onclick="addInfo(this)">166</button>
+    <button class="button" data-info="" onclick="addInfo(this)">167</button>
+    <button class="button" data-info="" onclick="addInfo(this)">168</button>
+    <button class="button" data-info="" onclick="addInfo(this)">169</button>
+    <button class="button" data-info="" onclick="addInfo(this)">170</button>
+    <button class="button" data-info="" onclick="addInfo(this)">171</button>
+    <button class="button" data-info="" onclick="addInfo(this)">172</button>
+    <button class="button" data-info="" onclick="addInfo(this)">173</button>
+    <button class="button" data-info="" onclick="addInfo(this)">181</button>
+    <button class="button" data-info="" onclick="addInfo(this)">182</button>
+    <button class="button" data-info="" onclick="addInfo(this)">183</button>
+    <button class="button" data-info="" onclick="addInfo(this)">184</button>
+    <button class="button" data-info="" onclick="addInfo(this)">185</button>
+    <button class="button" data-info="" onclick="addInfo(this)">186</button>
+    <button class="button" data-info="" onclick="addInfo(this)">187</button>
+    <button class="button" data-info="" onclick="addInfo(this)">188</button>
+    <button class="button" data-info="" onclick="addInfo(this)">189</button>
+    <button class="button" data-info="" onclick="addInfo(this)">190</button>
+</div>
+    <P class="PARA1">SUPERIORES</P>
+    <div class="quartos">
+    <button class="button" data-info="" onclick="addInfo(this)">201</button>
+    <button class="button" data-info="" onclick="addInfo(this)">202</button>
+    <button class="button" data-info="" onclick="addInfo(this)">203</button>
+    <button class="button" data-info="" onclick="addInfo(this)">204</button>
+    <button class="button" data-info="" onclick="addInfo(this)">205</button>
+    <button class="button" data-info="" onclick="addInfo(this)">206</button>
+    <button class="button" data-info="" onclick="addInfo(this)">207</button>
+    <button class="button" data-info="" onclick="addInfo(this)">208</button>
+    <button class="button" data-info="" onclick="addInfo(this)">209</button>
+    <button class="button" data-info="" onclick="addInfo(this)">210</button>
+    <button class="button" data-info="" onclick="addInfo(this)">211</button>
+    <button class="button" data-info="" onclick="addInfo(this)">212</button>
+    <button class="button" data-info="" onclick="addInfo(this)">214</button>
+    <button class="button" data-info="" onclick="addInfo(this)">215</button>
+    <button class="button" data-info="" onclick="addInfo(this)">216</button>
+    <button class="button" data-info="" onclick="addInfo(this)">221</button>
+    <button class="button" data-info="" onclick="addInfo(this)">222</button>
+    <button class="button" data-info="" onclick="addInfo(this)">223</button>
+    <button class="button" data-info="" onclick="addInfo(this)">224</button>
+    <button class="button" data-info="" onclick="addInfo(this)">225</button>
+    <button class="button" data-info="" onclick="addInfo(this)">226</button>
+    <button class="button" data-info="" onclick="addInfo(this)">227</button>
+    <button class="button" data-info="" onclick="addInfo(this)">228</button>
+    <button class="button" data-info="" onclick="addInfo(this)">229</button>
+    <button class="button" data-info="" onclick="addInfo(this)">230</button>
+    <button class="button" data-info="" onclick="addInfo(this)">231</button>
+    <button class="button" data-info="" onclick="addInfo(this)">240</button>
+    <button class="button" data-info="" onclick="addInfo(this)">241</button>
+    <button class="button" data-info="" onclick="addInfo(this)">242</button>
+    <button class="button" data-info="" onclick="addInfo(this)">243</button>
+    <button class="button" data-info="" onclick="addInfo(this)">244</button>
+    <button class="button" data-info="" onclick="addInfo(this)">245</button>
+    <button class="button" data-info="" onclick="addInfo(this)">246</button>
+    <button class="button" data-info="" onclick="addInfo(this)">247</button>
+    <button class="button" data-info="" onclick="addInfo(this)">248</button>
+    <button class="button" data-info="" onclick="addInfo(this)">249</button>
+    <button class="button" data-info="" onclick="addInfo(this)">250</button>
+    <button class="button" data-info="" onclick="addInfo(this)">251</button>
+    <button class="button" data-info="" onclick="addInfo(this)">252</button>
+    <button class="button" data-info="" onclick="addInfo(this)">261</button>
+    <button class="button" data-info="" onclick="addInfo(this)">262</button>
+    <button class="button" data-info="" onclick="addInfo(this)">263</button>
+    <button class="button" data-info="" onclick="addInfo(this)">264</button>
+    <button class="button" data-info="" onclick="addInfo(this)">265</button>
+    <button class="button" data-info="" onclick="addInfo(this)">266</button>
+    <button class="button" data-info="" onclick="addInfo(this)">267</button>
+    <button class="button" data-info="" onclick="addInfo(this)">268</button>
+    <button class="button" data-info="" onclick="addInfo(this)">269</button>
+    <button class="button" data-info="" onclick="addInfo(this)">270</button>
+    <button class="button" data-info="" onclick="addInfo(this)">271</button>
+    <button class="button" data-info="" onclick="addInfo(this)">272</button>
+    <button class="button" data-info="" onclick="addInfo(this)">273</button>
+    <button class="button" data-info="" onclick="addInfo(this)">281</button>
+    <button class="button" data-info="" onclick="addInfo(this)">283</button>
+    <button class="button" data-info="" onclick="addInfo(this)">284</button>
+    <button class="button" data-info="" onclick="addInfo(this)">285</button>
+    <button class="button" data-info="" onclick="addInfo(this)">286</button>
+    <button class="button" data-info="" onclick="addInfo(this)">287</button>
+    <button class="button" data-info="" onclick="addInfo(this)">288</button>
+    <button class="button" data-info="" onclick="addInfo(this)">289</button>
+    <button class="button" data-info="" onclick="addInfo(this)">320</button>
+    <button class="button" data-info="" onclick="addInfo(this)">321</button>
+    <button class="button" data-info="" onclick="addInfo(this)">322</button>
+</div>
+    <p class="PARA1">ALOJAMENTOS</p>
+    <div class="alojamentos">
+    <button class="button" data-info="" onclick="addInfo(this)">1</button>
+    <button class="button" data-info="" onclick="addInfo(this)">2</button>
+    <button class="button" data-info="" onclick="addInfo(this)">3</button>
+    <button class="button" data-info="" onclick="addInfo(this)">4</button>
+    <button class="button" data-info="" onclick="addInfo(this)">5</button>
+    <button class="button" data-info="" onclick="addInfo(this)">6</button>
+    <button class="button" data-info="" onclick="addInfo(this)">7</button>
+    <button class="button" data-info="" onclick="addInfo(this)">8</button>
+    <button class="button" data-info="" onclick="addInfo(this)">9</button>
+    <button class="button" data-info="" onclick="addInfo(this)">10</button>
+    <button class="button" data-info="" onclick="addInfo(this)">11</button>
+    <button class="button" data-info="" onclick="addInfo(this)">12</button>
+    <button class="button" data-info="" onclick="addInfo(this)">13</button>
+    </div>
+    
+
+    <div class="input-container" id="inputContainer">
+        <input type="text" id="infoInput" placeholder="Digite a informação">
+        <button id="saveButton">Salvar</button>
+        <button id="deleteButton">Excluir</button>
+        <button id="closeButton">Fechar</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        const infoBox = document.getElementById('infoBox');
+        const inputContainer = document.getElementById('inputContainer');
+        const infoInput = document.getElementById('infoInput');
+        const saveButton = document.getElementById('saveButton');
+        const deleteButton = document.getElementById('deleteButton');
+        const closeButton = document.getElementById('closeButton');
+        let currentButton;
+
+        function addInfo(button) {
+            currentButton = button;
+            infoInput.value = button.getAttribute('data-info');
+            inputContainer.style.display = 'block';
+        }
+
+        saveButton.addEventListener('click', () => {
+            if (currentButton) {
+                currentButton.setAttribute('data-info', infoInput.value);
+                currentButton.style.backgroundColor = 'red';
+                inputContainer.style.display = 'none';
+            }
+        });
+
+        deleteButton.addEventListener('click', () => {
+            if (currentButton) {
+                currentButton.removeAttribute('data-info');
+                currentButton.style.backgroundColor = 'rgb(99, 98, 96)'; /* Volta à cor inicial */
+                currentButton.textContent = currentButton.dataset.originalText;
+                inputContainer.style.display = 'none';
+            }
+        });
+
+        closeButton.addEventListener('click', () => {
+            inputContainer.style.display = 'none';
+        });
+
+        buttons.forEach(button => {
+            button.dataset.originalText = button.textContent;
+
+            button.addEventListener('mouseenter', () => {
+                if (button.getAttribute('data-info')) {
+                    infoBox.textContent = button.getAttribute('data-info');
+                    infoBox.style.display = 'block';
+                }
+            });
+
+            button.addEventListener('mouseleave', () => {
+                infoBox.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
